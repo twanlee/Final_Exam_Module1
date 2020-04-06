@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Fibonacci</title>
+</head>
+<body>
+<script>
+function isFibonacci(number) {
+    let fibSeq = [0,1];
+    for( let i=0; i<number;i++){
+        fibSeq.push(fibSeq[i] + fibSeq[i+1]);
+    }
+    if(fibSeq.indexOf(number) > -1){
+        return true;
+    }else {
+        return false;
+    }
+}
+document.write(isFibonacci(45));
+</script>
+</body>
+</html>

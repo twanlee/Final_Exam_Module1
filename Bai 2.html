@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xoá phần tử mảng</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr,x) {
+
+        for( let i=0; i<arr.length; i++){
+            if(x===arr[i]){
+                arr.splice(i,1);
+            }
+        }return arr;
+    }
+
+    let numberLength = Number(prompt('Mời nhập độ dài mảng'));
+    let numberList = [];
+
+    for ( let i=0; i<numberLength; i++){
+        let num = Number(prompt('Mời nhập số nguyên trong mảng'));
+        numberList.push(num);
+    }
+    let x = Number(prompt('Mời nhập số cần xoá'));
+    numberList = tryRemoveFromArray(numberList,x);
+    document.write(numberList);
+</script>
+</body>
+</html>

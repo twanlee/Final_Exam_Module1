@@ -17,10 +17,13 @@
 
     let numberStudent = Number(prompt('Mời nhập só sinh viên'));
     let listPoint = [];
+    let maxPoint;
     for ( i=0; i<numberStudent; i++){
         let point = Number(prompt('Mời nhập điểm'));
-        listPoint.push()
+        listPoint.push(point);
     }
+    maxPoint = findMax(listPoint);
+    document.write('Điểm lớn nhất là: '+ maxPoint);
 </script>
 </body>
 </html>
